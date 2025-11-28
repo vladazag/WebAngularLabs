@@ -1,0 +1,18 @@
+<h2>Результат</h2>
+<form>
+    <label>Кличка:
+        <input id="animal-name" type="text">
+    </label>
+
+    <label>Ріст (м):
+        <input id="animal-height" type="number" step="0.01">
+    </label>
+
+    <label>Порода:
+        <input id="cat-breed" type="text">
+    </label>
+
+    <button (click)="createCat()">Створити кішку</button>
+
+    <p>{{ result }}</p>
+</form>
