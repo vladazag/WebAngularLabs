@@ -1,11 +1,12 @@
 <h2>Результат</h2>
+<h3>Кішка</h3>
 <form>
     <label>Кличка:
-        <input id="animal-name" type="text">
+        <input id="cat-name" type="text">
     </label>
 
     <label>Ріст (м):
-        <input id="animal-height" type="number" step="0.01">
+        <input id="cat-height" type="number" step="0.01">
     </label>
 
     <label>Порода:
@@ -14,5 +15,27 @@
 
     <button type="button" (click)="createCat()">Створити кішку</button>
 
-    <p>{{ result }}</p>
+    <p>{{ resultCat }}</p>
+</form>
+<h3>Собака</h3>
+<form>
+    <label>Кличка:
+        <input id="dog-name" type="text">
+    </label>
+
+    <label>Ріст (м):
+        <input id="dog-height" type="number" step="0.01">
+    </label>
+
+    <label>Порода:
+        <input id="dog-breed" type="text">
+    </label>
+
+    <label>Що охороняє собака:
+        <input id="guardObject" type="text">
+    </label>
+
+    <button type="button" (click)="createDog()">Створити собаку</button>
+
+    <p>{{ resultDog }}</p>
 </form>
